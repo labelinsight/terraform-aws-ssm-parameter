@@ -6,6 +6,10 @@ The name and value are generated based on the current working directory, the ter
 
 ## Module Usage
 ```
+terraform {
+  required_version = "> 0.12.6"
+}
+
 module "dynamo_db_name" {
   source = "github.com/labelinsight/terraform-aws-ssm-parameter"
   description = "The new Dynamo DB table name for my fancy project"
