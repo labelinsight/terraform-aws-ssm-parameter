@@ -6,8 +6,10 @@ The name and value are generated based on the current working directory, the ter
 
 ## Module Usage
 ```
+# directory: /my/code/fancyproject
+
 terraform {
-  required_version = "> 0.12.6"
+  required_version = ">= 0.12.6"
 }
 
 module "dynamo_db_name" {
